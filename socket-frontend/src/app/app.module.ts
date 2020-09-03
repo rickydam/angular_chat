@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ChatInboxComponent } from './chat-inbox/chat-inbox.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { ChatInboxComponent } from './chat-inbox/chat-inbox.component';
     ChatInboxComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

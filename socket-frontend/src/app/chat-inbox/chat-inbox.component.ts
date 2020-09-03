@@ -10,6 +10,7 @@ const SOCKET_ENDPOINT = 'localhost:3000';
 })
 export class ChatInboxComponent implements OnInit {
   socket;
+  message: string;
   constructor() { }
 
   ngOnInit() {
@@ -17,6 +18,11 @@ export class ChatInboxComponent implements OnInit {
   }
   setupSocketConnection() {
     this.socket = io(SOCKET_ENDPOINT);
+  }
+
+  SendMessage() {
+    this.socket.emit('message', this.message);
+    this.message = '';
   }
 
 }
