@@ -4,7 +4,7 @@
   "description": "backend",
   "main": "index.js",
   "scripts": {
-    "starter": "nodemon server.js"
+    "serve": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
